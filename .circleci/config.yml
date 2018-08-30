@@ -8,6 +8,7 @@ jobs:
     steps:
       - checkout
       - run: pwd
+      - run: ls
       - run: npm install ionic cordova
       - run: npm install
       - run: gem install fastlane
@@ -19,4 +20,3 @@ workflows:
   build:
     jobs:
       - build
-      
