@@ -12,7 +12,7 @@ jobs:
       - run: npm install ionic cordova
       - run: npm install
       - run: gem install fastlane
-      # - run: fastlane init
+      - run: fastlane init
       - run: fastlane add_plugin ionic
       - run: yes n | fastlane build_debug
 
