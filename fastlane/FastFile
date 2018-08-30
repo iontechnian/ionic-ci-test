@@ -1,0 +1,8 @@
+desc "Build Debug"
+lane :build_debug do
+  ionic(
+    platform: 'android',
+    prod: true,
+    release: false
+  )
+end
