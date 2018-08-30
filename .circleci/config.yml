@@ -7,7 +7,7 @@ jobs:
       - image: circleci/ruby:2.4-node
     steps:
       - checkout
-      - run: npm install -g ionic cordova
+      - run: npm install ionic cordova
       - run: npm install
       - run: gem install fastlane
       - run: fastlane add_plugin ionic
@@ -18,4 +18,3 @@ workflows:
   build:
     jobs:
       - build
-      
