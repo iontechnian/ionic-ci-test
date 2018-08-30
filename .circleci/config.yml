@@ -2,6 +2,7 @@ version: 2.0
 
 jobs:
   build:
+    working_directory: ~/project
     docker:
       - image: circleci/ruby:2.4-node
     steps:
@@ -17,4 +18,3 @@ workflows:
   build:
     jobs:
       - build
-      
